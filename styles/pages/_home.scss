@@ -10,7 +10,7 @@
     &__video {
         position: absolute;
         z-index: -1;
-        inset:0;
+        inset: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -20,10 +20,13 @@
         padding-top: 220px;
         padding-bottom: 75px;
         max-width: 680px;
-        @media screen and (min-width:900px){
-            padding-top:  100px; ;
+
+        @media screen and (min-width:900px) {
+            padding-top: 100px;
+            ;
         }
-        @media screen and (min-width:1200px){
+
+        @media screen and (min-width:1200px) {
             max-width: 1200px;
             margin-inline: auto;
             padding-top: 200px;
@@ -34,12 +37,13 @@
         color: #fff;
         font-weight: 700;
         font-size: 24px;
-        @media screen and (min-width:900px){
+
+        @media screen and (min-width:900px) {
             font-size: 56px;
             margin-bottom: 0;
         }
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:1200px) {
             font-size: 80px;
             white-space: nowrap;
         }
@@ -48,55 +52,333 @@
     &__text {
         color: #fff;
         line-height: 25px;
-        margin-bottom:40px;
+        margin-bottom: 40px;
         max-width: 680px;
-        @media screen and (min-width:900px){
+
+        @media screen and (min-width:900px) {
             font-size: 20px;
             line-height: 31px;
         }
     }
 
-    &__btn-blue{
-        color:#fff;
-        background-color:rgba(7, 68, 175,1) ;
+    &__btn-blue {
+        color: #fff;
+        background-color: rgba(7, 68, 175, 1);
         text-decoration: none;
         text-transform: uppercase;
-        padding:16px 32px;
+        padding: 16px 32px;
         border-radius: 5px;
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 2px;
         margin-right: 10px;
         display: none;
-        @media screen and (min-width:900px){
+
+        @media screen and (min-width:900px) {
             display: inline-block;
         }
 
-        &:hover{
-            background-color:rgba(7, 68, 175,0.7) ;
+        &:hover {
+            background-color: rgba(7, 68, 175, 0.4);
             transition: 0.3s all ease-in-out;
         }
     }
 
-    &__btn-dark{
-        color:#fff;
-        background-color:rgba(0, 0, 0,1) ;
+    &__btn-dark {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 1);
         text-decoration: none;
         text-transform: uppercase;
-        padding:16px 32px;
+        padding: 16px 32px;
         border-radius: 5px;
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 2px;
         margin-right: 10px;
         display: none;
-        @media screen and (min-width:900px){
+
+        @media screen and (min-width:900px) {
             display: inline-block;
         }
-        
-        &:hover{
-            background-color:rgba(0, 0, 0,0.5);
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
             transition: 0.3s all ease-in-out;
         }
     }
+}
+
+.intro {
+
+    padding-bottom: 100px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:1024px) {
+            flex-direction: row;
+        }
+    }
+
+    &__right {
+        text-align: center;
+
+        @media screen and (min-width:1024px) {
+            text-align-last: left;
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #0744af;
+        text-transform: uppercase;
+        font-size: 17px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    &__title {
+        font-size: 30px;
+
+        @media screen and (min-width:1024px) {
+            font-size: 60px;
+            margin-block: 0;
+        }
+    }
+
+    &__text1,
+    &__text2 {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #555;
+
+        a {
+            color: #0744af;
+        }
+    }
+
+    &__blockquote {
+        text-align: center;
+    }
+
+    &__citation {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 28px;
+        line-height: 1.4;
+        color: #0744af;
+    }
+
+    &__auteur {
+        font-family: 'Times New Roman', Times, serif;
+        color: #0744af;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 24px;
+    }
+
+    .fa-quote-left {
+        margin-right: 6px;
+    }
+
+    .fa-quote-right {
+        margin-left: 6px;
+    }
+}
+
+.attorneys-intro {
+    background-color: #0744af;
+    color: #fff;
+
+    &__wrapper {
+        padding-block: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width:1000px) {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: start;
+        }
+    }
+
+    &__image-wrapper {
+
+        width: 270px;
+        height: 270px;
+        background-color: #0693e3;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        @media screen and (min-width:1000px) {
+            max-width: 50%;
+            width: 390px;
+            height: 390px;
+        }
+
+        img {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            margin: 15px;
+
+            @media screen and (min-width:1000px) {
+                width: 360px;
+                height: 360px;
+            }
+        }
+
+        span {
+            position: absolute;
+            top: 78%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #0F3447, #0744af);
+            padding: 10px 20px;
+            font-size: 16px;
+
+            @media screen and (min-width:1000px) {
+                top: 87%;
+            }
+        }
+    }
+
+    &__content {
+        text-align: center;
+
+        @media screen and (min-width:1000px) {
+            text-align: left;
+            flex: 0 0 50%;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            margin-bottom: 24px;
+        }
+
+        a {
+            color: #0f3447;
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 1.6px;
+            text-decoration: none;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    &__title {
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+.teaser {
+
+    padding: 50px 0;
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__subtitle {
+        color: #0744af;
+        text-transform: uppercase;
+        font-size: 17px;
+        margin-bottom: 5px;
+        font-weight: 600;
+
+    }
+
+    &__title {
+        color: #000;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #555;
+    }
+
+    &-card {
+        padding: 20px;
+        background-color: #f3f5f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            transform: translateY(-10px);
+            transition: 0.3s all ease-in-out;
+            cursor: pointer;
+
+            p {
+                color: #0744af;
+            }
+
+            hr {
+                width: calc(99.4048% + 0.4881px);
+                border-top-color: rgb(8, 69, 175);
+            }
+        }
+
+        hr {
+            border-top: 3px solid #DDD;
+            width: 82px;
+            margin-left: 0;
+            margin-top: 1.0rem;
+            margin-bottom: 1.0rem;
+            transition: border-color 0.3s ease-in-out, width 0.3s ease-in-out;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+
+        &__text{
+            color: #222222;
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+    }
+
 }
