@@ -576,13 +576,44 @@
     color:#fff;
     z-index: 100;
 
+    &:hover{
+        i{
+            transform: scale(1.4);
+            transition:0.3s all ease-in-out;
+        }
+        a{
+            text-decoration: underline;
+            color: #ffdb1c;
+            transition:0.3s all ease-in-out;
+        }
+    }
+
     a{
         text-decoration: none;
         color:#fff;
         font-size: 18px;
         font-weight: 700;
+        transition:0.3s all ease-in-out;
     }
     @media screen and (min-width:650px){
         display: none;
+    }
+
+    i{
+        margin-right: 10px; 
+        transition:0.3s all ease-in-out;
+   }
+}
+
+.petit-bonhomme{
+    position: fixed;
+    bottom: 13px;
+    left:15px;
+    z-index: 200;
+    transition: 0.3s all ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s all ease-in-out;
     }
 }

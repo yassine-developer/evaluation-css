@@ -12,19 +12,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media screen and (min-width:1200px){
-        padding-inline: 50px;
+
+        @media screen and (min-width:1200px) {
+            padding-inline: 50px;
         }
     }
 
     &__logo {
         z-index: 2;
+
         img {
             height: 60px;
             width: 210px;
 
-            @media screen and (min-width:1200px){
-                width:342px;
+            @media screen and (min-width:1200px) {
+                width: 342px;
                 height: 90px;
 
             }
@@ -51,6 +53,7 @@
     &__nav {
         display: none;
         z-index: 2;
+
         @media screen and (min-width:900px) {
             display: block;
         }
@@ -61,7 +64,7 @@
         list-style: none;
         gap: 20px;
         align-items: center;
-        
+
     }
 
     &__nav-link {
@@ -73,10 +76,14 @@
         padding: 4px 15px;
         transition: 0.3s all ease-in-out;
 
-        &:hover{
-            color:rgb(19, 77, 179);
+        &:hover {
+            color: rgb(19, 77, 179);
             transition: 0.3s all ease-in-out;
         }
+    }
+
+    &__nav-link--attorneys {
+        color: #000;
     }
 
     i {
@@ -92,4 +99,6 @@
         cursor: pointer;
         color: white;
     }
+
+    
 }
